@@ -11,7 +11,9 @@ namespace agenda.DAL
     public class AgendaContext : DbContext
     {
         private const string NAME_CONNECTION_STRING = "agenda";
+
         public AgendaContext() : base(NAME_CONNECTION_STRING) { }
+
         public DbSet<Categoria> Categorias { get; }
     }
 }                                                                                                                                                                                                                                                                                                                                                                                               

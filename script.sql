@@ -1,6 +1,6 @@
-create database dbagenda;
+-- create database dbagenda;
 
-use dbagenda;
+-- use dbagenda;
 
 create table categorias(
 	codigo_categoria integer auto_increment not null primary key,
@@ -23,4 +23,4 @@ nome_cidade varchar (100),
 codigo_uf varchar(2)
 );
 
-grant all privileges on *.* to 'root'@'192.168.1.0/255.255.255.0';
+-- grant all privileges on *.* to 'root'@'192.168.1.0/255.255.255.0';

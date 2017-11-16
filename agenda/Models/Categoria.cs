@@ -7,15 +7,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace agenda.Models
 {
-    [Table("Categorias")]
-    public class Categoria
+    [Table("categorias")]
+    public class Categoria : EntityModel
     {
-        [Column("id_codigo")]
+        [Column(name: "codigo_categoria")]
         public int Codigo { get; set; }
 
-        [Required]
-        [Column("nome_categoria")]
+        [Column(name: "nome_categoria")]
         public String Nome { get; set; }
+
+        public int GetCode()
+        {
+            return Codigo;
+        }
 
     }
 }
