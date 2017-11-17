@@ -130,12 +130,14 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\ContatosController.cs" />
     <Compile Include="DAL\AgendaContext.cs" />
     <Compile Include="DAL\Repositorio.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Contatos.cs" />
     <Compile Include="Models\EntityModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -151,6 +153,11 @@
     <Content Include="Views\Categoria\Create.cshtml" />
     <Content Include="Views\Categoria\Edit.cshtml" />
     <Content Include="Views\Categoria\Delete.cshtml" />
+    <Content Include="Views\Contatos\Delete.cshtml" />
+    <Content Include="Views\Contatos\Edit.cshtml" />
+    <Content Include="Views\Contatos\Create.cshtml" />
+    <Content Include="Views\Contatos\Index.cshtml" />
+    <Content Include="Views\Contatos\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

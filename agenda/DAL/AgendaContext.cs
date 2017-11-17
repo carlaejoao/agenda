@@ -15,5 +15,7 @@ namespace agenda.DAL
         public AgendaContext() : base(NAME_CONNECTION_STRING) { }
 
         public DbSet<Categoria> Categorias { get; }
+
+        public DbSet<Contatos> contatos { get; }
     }
 }                                                                                                                                                                                                                                                                                                                                                                                               
